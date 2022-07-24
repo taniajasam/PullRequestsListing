@@ -17,6 +17,7 @@
 		20D0EFAE288D340300E1450D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAD288D340300E1450D /* NetworkManager.swift */; };
 		20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAF288D377100E1450D /* RequestConfiguration.swift */; };
 		20D0EFB3288D5EA100E1450D /* HomeAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */; };
+		20D0EFB5288D5F7D00E1450D /* PRListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB4288D5F7D00E1450D /* PRListingModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		20D0EFAD288D340300E1450D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		20D0EFAF288D377100E1450D /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
 		20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIConfiguration.swift; sourceTree = "<group>"; };
+		20D0EFB4288D5F7D00E1450D /* PRListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRListingModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		20D0EFA3288D31FE00E1450D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				20D0EFB4288D5F7D00E1450D /* PRListingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */,
 				20D0EF8D288BF43C00E1450D /* AppDelegate.swift in Sources */,
 				20D0EF8F288BF43C00E1450D /* SceneDelegate.swift in Sources */,
+				20D0EFB5288D5F7D00E1450D /* PRListingModel.swift in Sources */,
 				20D0EFAE288D340300E1450D /* NetworkManager.swift in Sources */,
 				20D0EFA8288D326500E1450D /* HomeViewController.swift in Sources */,
 				20D0EFAC288D33DE00E1450D /* HomeViewModel.swift in Sources */,
