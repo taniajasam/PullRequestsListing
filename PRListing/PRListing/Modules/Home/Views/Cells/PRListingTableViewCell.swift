@@ -18,12 +18,13 @@ class PRListingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     func configure(prData: PRListingModel) {
         self.title.text = prData.title ?? ""
         self.prDescription.text = prData.body ?? "Description NA"
         self.username.text = prData.user?.login ?? ""
+        self.creationDate.text = "Created at: \(Utility.convertDateFromString(stringDate: prData.created_at ?? ""))"
+        self.closedDate.text = "Closed at: \(Utility.convertDateFromString(stringDate: prData.closed_at ?? ""))"
     }
 }

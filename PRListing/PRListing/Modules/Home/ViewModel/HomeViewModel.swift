@@ -33,4 +33,8 @@ class HomeViewModel: ObservableObject {
             })
             .store(in: &subscriptions)
     }
+    
+    func getNumberOfItems() -> Int {
+        self.listingData.count
+    }
 }
