@@ -27,6 +27,7 @@ class HomeViewController: UIViewController {
         prListingTableView.register(UINib.init(nibName: "PRListingTableViewCell", bundle: nil), forCellReuseIdentifier: "PRListingTableViewCell")
         prListingTableView.dataSource = self
         prListingTableView.delegate = self
+        prListingTableView.rowHeight = UITableView.automaticDimension
     }
     
     func bindViewModel() {

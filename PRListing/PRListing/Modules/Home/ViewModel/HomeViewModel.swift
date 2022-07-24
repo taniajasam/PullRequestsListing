@@ -30,7 +30,7 @@ class HomeViewModel: ObservableObject {
                     break
                 }
             }, receiveValue: { [weak self] response in
-                self?.listingData = response
+                self?.listingData = response.reversed()
             })
             .store(in: &subscriptions)
     }
