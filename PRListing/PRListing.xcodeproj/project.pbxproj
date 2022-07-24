@@ -16,6 +16,7 @@
 		20D0EFAC288D33DE00E1450D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAB288D33DE00E1450D /* HomeViewModel.swift */; };
 		20D0EFAE288D340300E1450D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAD288D340300E1450D /* NetworkManager.swift */; };
 		20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAF288D377100E1450D /* RequestConfiguration.swift */; };
+		20D0EFB3288D5EA100E1450D /* HomeAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		20D0EFAB288D33DE00E1450D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		20D0EFAD288D340300E1450D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		20D0EFAF288D377100E1450D /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		20D0EFA2288D31F100E1450D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				20D0EFB1288D5E7A00E1450D /* APIConfig */,
 				20D0EFA5288D320E00E1450D /* Views */,
 				20D0EFA4288D320500E1450D /* ViewModel */,
 				20D0EFA3288D31FE00E1450D /* Model */,
@@ -146,6 +149,14 @@
 				20D0EFAF288D377100E1450D /* RequestConfiguration.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		20D0EFB1288D5E7A00E1450D /* APIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */,
+			);
+			path = APIConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0EFB3288D5EA100E1450D /* HomeAPIConfiguration.swift in Sources */,
 				20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */,
 				20D0EF8D288BF43C00E1450D /* AppDelegate.swift in Sources */,
 				20D0EF8F288BF43C00E1450D /* SceneDelegate.swift in Sources */,
