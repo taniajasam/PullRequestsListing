@@ -12,7 +12,7 @@ class Utility {
         let dateFormatter: DateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         if let date: Date = dateFormatter.date(from: stringDate) {
-            dateFormatter.dateFormat = "dd MMM yy HH:mm"
+            dateFormatter.dateFormat = "dd MMM yy, HH:mm"
             return dateFormatter.string(from: date)
         }
         return ""

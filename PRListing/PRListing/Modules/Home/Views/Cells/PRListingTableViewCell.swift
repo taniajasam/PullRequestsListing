@@ -21,6 +21,7 @@ class PRListingTableViewCell: UITableViewCell {
         super.awakeFromNib()
         self.userImageView.layer.cornerRadius = self.userImageView.frame.size.height/2
         self.userImageView.tintColor = .gray
+        self.selectionStyle = .none
     }
     
     override func prepareForReuse() {
