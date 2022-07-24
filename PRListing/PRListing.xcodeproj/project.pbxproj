@@ -18,6 +18,8 @@
 		20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFAF288D377100E1450D /* RequestConfiguration.swift */; };
 		20D0EFB3288D5EA100E1450D /* HomeAPIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */; };
 		20D0EFB5288D5F7D00E1450D /* PRListingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB4288D5F7D00E1450D /* PRListingModel.swift */; };
+		20D0EFB8288D677200E1450D /* PRListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0EFB6288D677200E1450D /* PRListingTableViewCell.swift */; };
+		20D0EFB9288D677200E1450D /* PRListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20D0EFB7288D677200E1450D /* PRListingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		20D0EFAF288D377100E1450D /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
 		20D0EFB2288D5EA100E1450D /* HomeAPIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIConfiguration.swift; sourceTree = "<group>"; };
 		20D0EFB4288D5F7D00E1450D /* PRListingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRListingModel.swift; sourceTree = "<group>"; };
+		20D0EFB6288D677200E1450D /* PRListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRListingTableViewCell.swift; sourceTree = "<group>"; };
+		20D0EFB7288D677200E1450D /* PRListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PRListingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,8 @@
 		20D0EFA6288D321F00E1450D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				20D0EFB6288D677200E1450D /* PRListingTableViewCell.swift */,
+				20D0EFB7288D677200E1450D /* PRListingTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			files = (
 				20D0EF99288BF43D00E1450D /* LaunchScreen.storyboard in Resources */,
 				20D0EF96288BF43D00E1450D /* Assets.xcassets in Resources */,
+				20D0EFB9288D677200E1450D /* PRListingTableViewCell.xib in Resources */,
 				20D0EF94288BF43C00E1450D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +242,7 @@
 			files = (
 				20D0EFB3288D5EA100E1450D /* HomeAPIConfiguration.swift in Sources */,
 				20D0EFB0288D377100E1450D /* RequestConfiguration.swift in Sources */,
+				20D0EFB8288D677200E1450D /* PRListingTableViewCell.swift in Sources */,
 				20D0EF8D288BF43C00E1450D /* AppDelegate.swift in Sources */,
 				20D0EF8F288BF43C00E1450D /* SceneDelegate.swift in Sources */,
 				20D0EFB5288D5F7D00E1450D /* PRListingModel.swift in Sources */,
