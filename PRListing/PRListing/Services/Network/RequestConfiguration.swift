@@ -18,15 +18,21 @@ protocol RequestConfiguration {
     func getMethod() -> HTTPRequestMethod
     
     func getHeaders() -> [String: String]
+    
+    func getRequestBody() -> [String: Any]?
 }
 
 extension RequestConfiguration {
     
     func getMethod() -> HTTPRequestMethod {
-        return .GET
+         .GET
     }
     
     func getHeaders() -> [String: String] {
-        return [:]
+         [:]
+    }
+    
+    func getRequestBody() -> [String: Any]? {
+         nil
     }
 }
