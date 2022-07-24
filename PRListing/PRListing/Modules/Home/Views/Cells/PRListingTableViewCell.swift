@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class PRListingTableViewCell: UITableViewCell {
     
@@ -18,6 +19,12 @@ class PRListingTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.userImageView.layer.cornerRadius = self.userImageView.frame.size.height/2
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.userImageView.image = nil
     }
 
     func configure(prData: PRListingModel) {
@@ -26,5 +33,6 @@ class PRListingTableViewCell: UITableViewCell {
         self.username.text = prData.user?.login ?? ""
         self.creationDate.text = "Created at: \(Utility.convertDateFromString(stringDate: prData.created_at ?? ""))"
         self.closedDate.text = "Closed at: \(Utility.convertDateFromString(stringDate: prData.closed_at ?? ""))"
+        self.userImageView.kf.setImage(with: URL(string: prData.user?.avatar_url ?? ""))
     }
 }
