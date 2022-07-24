@@ -20,6 +20,7 @@ class PRListingTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.userImageView.layer.cornerRadius = self.userImageView.frame.size.height/2
+        self.userImageView.tintColor = .gray
     }
     
     override func prepareForReuse() {
@@ -27,12 +28,14 @@ class PRListingTableViewCell: UITableViewCell {
         self.userImageView.image = nil
     }
 
-    func configure(prData: PRListingModel) {
-        self.title.text = prData.title ?? ""
-        self.prDescription.text = prData.body ?? "Description NA"
-        self.username.text = prData.user?.login ?? ""
-        self.creationDate.text = "Created at: \(Utility.convertDateFromString(stringDate: prData.created_at ?? ""))"
-        self.closedDate.text = "Closed at: \(Utility.convertDateFromString(stringDate: prData.closed_at ?? ""))"
-        self.userImageView.kf.setImage(with: URL(string: prData.user?.avatar_url ?? ""))
+    func configure(prData: PRListingModel?) {
+        guard let pullRequest: PRListingModel = prData else { return }
+        
+        self.title.text = pullRequest.title ?? ""
+        self.prDescription.text = pullRequest.body ?? "Description NA"
+        self.username.text = pullRequest.user?.login ?? ""
+        self.creationDate.text = "Created at: \(Utility.convertDateFromString(stringDate: pullRequest.created_at ?? ""))"
+        self.closedDate.text = "Closed at: \(Utility.convertDateFromString(stringDate: pullRequest.closed_at ?? ""))"
+        self.userImageView.kf.setImage(with: URL(string: pullRequest.user?.avatar_url ?? ""), placeholder: UIImage(systemName: "person.fill"))
     }
 }
