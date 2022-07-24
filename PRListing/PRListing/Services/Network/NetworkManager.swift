@@ -93,3 +93,24 @@ enum NetworkError: Error {
 }
 
 
+extension NetworkError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return NSLocalizedString(
+                "Please verify the URL for fetching pull requests",
+                comment: "Invalid URL"
+            )
+        case .apiFailure:
+            return NSLocalizedString(
+                "Something went wrong while fetching pull requests",
+                comment: "API Failure"
+            )
+        case .unknown:
+            return NSLocalizedString(
+                "An unexpected error occurred.",
+                comment: "Unexpected Error"
+            )
+        }
+    }
+}

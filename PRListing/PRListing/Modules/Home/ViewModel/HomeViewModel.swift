@@ -12,7 +12,8 @@ class HomeViewModel: ObservableObject {
     
     lazy var subscriptions: Set<AnyCancellable> = Set<AnyCancellable>()
     var networkManager: NetworkRequestable?
-    @Published var listingData: [PRListingModel] = []
+    @Published var listingData: [PRListingModel]?
+    @Published var error: Error?
     
     init(networkManager: NetworkRequestable) {
         self.networkManager = networkManager
@@ -20,10 +21,10 @@ class HomeViewModel: ObservableObject {
     
     func fetchPullRequests() {
         networkManager?.dataTask(with: HomeAPIConfiguration(), type: PRListingModel.self)
-            .sink(receiveCompletion: { completion in
+            .sink(receiveCompletion: { [weak self] completion in
                 switch completion {
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    self?.error = error
                     
                 default:
                     break
@@ -35,6 +36,6 @@ class HomeViewModel: ObservableObject {
     }
     
     func getNumberOfItems() -> Int {
-        self.listingData.count
+        self.listingData?.count ?? 0
     }
 }
